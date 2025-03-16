@@ -45,7 +45,6 @@ Tu misión es hundir todos los barcos enemigos antes de que la máquina hunda lo
 
 ### 3. Turnos de Disparo
 - En tu turno, ingresa las coordenadas de fila y columna donde quieres disparar.
-  - Ejemplo: Si quieres disparar en la fila 3 y columna 4, ingresa `3` y `4`.
 - Evita disparar en una posición donde ya disparaste. Si lo haces, recibirás un mensaje: `"Ya has disparado aquí. Intenta nuevamente."`
 - El programa verificará si el disparo es válido:
   - **Impacto en un barco enemigo**: Se marcará con `X`.
