@@ -63,8 +63,3 @@ Tu misión es hundir todos los barcos enemigos antes de que la máquina hunda lo
 - **Python 3.6+**
 - Biblioteca `numpy`: Para manejar los tableros como matrices.
 
----
-
-## ✨ Ejemplo Visual
-
-### Tablero del Jugador
