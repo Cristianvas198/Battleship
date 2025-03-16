@@ -75,3 +75,4 @@ def crear_barco_direccion(eslora, tablero, direccion):
         
 def ganar(tablero):
     return not np.any(tablero == "B")
+    

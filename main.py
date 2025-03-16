@@ -58,7 +58,7 @@ for eslora in [4, 3, 2]:  #para generar los barcos de la maquina
 while True:
     print("\nTu tablero:")  #muestra el tablero del jugador
     for fila in tablero_jugador:
-        print(" ".join(fila))
+        print("_".join(fila))
     
     time.sleep(2)
     tablero_maquina_base(tablero_maquina)  #muestra el tablero de la máquina
