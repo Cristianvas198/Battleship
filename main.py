@@ -11,7 +11,7 @@ print("        |    |    |")
 print("     )__)  )__)  )__)")
 print("    )____)____)_____)")
 print("    |   BATTLESHIP   |")
-print("~~~~~~~~~~~~~~~~~~~~~~~~")
+print("    ~~~~~~~~~~~~~~~~~~~~~~~~")
 print()
 time.sleep(5)
 print("🛳️ Bienvenid@ a Battleship 🛳️")
@@ -43,12 +43,12 @@ tablero_jugador = crear_tablero()
 tablero_maquina = crear_tablero()
 
 
-for n, eslora in enumerate([4, 3, 2], start=1):  # Portaviones, Yate, Bote
+for n, eslora in enumerate(4, 3, 3, 2, 2, 2, start=1):  # Portaviones, Yate, Bote
     direccion = input(f"Ingrese dirección del barco {n} (Norte, Sur, Este, Oeste): ").strip().lower() #El jugador ingresa la orientacion de barco
     barco = crear_barco_direccion(eslora, tablero_jugador, direccion)
     colocar_barco(barco, tablero_jugador)
 
-for eslora in [4, 3, 2]:  #para generar los barcos de la maquina
+for eslora in [4, 3, 3, 2, 2, 2]:  #para generar los barcos de la maquina
     while True:
         direccion_maquina = random.choice(["norte", "sur", "este", "oeste"]) #genera la direccion del barco de forma aleatoria
         barco_maquina = crear_barco_direccion(eslora, tablero_maquina, direccion_maquina)
