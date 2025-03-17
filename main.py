@@ -43,7 +43,7 @@ tablero_jugador = crear_tablero()
 tablero_maquina = crear_tablero()
 
 
-for n, eslora in enumerate(4, 3, 3, 2, 2, 2, start=1):  # Portaviones, Yate, Bote
+for n, eslora in enumerate([4, 3, 3, 2, 2, 2], start=1):  # Portaviones, Yate, Bote
     direccion = input(f"Ingrese dirección del barco {n} (Norte, Sur, Este, Oeste): ").strip().lower() #El jugador ingresa la orientacion de barco
     barco = crear_barco_direccion(eslora, tablero_jugador, direccion)
     colocar_barco(barco, tablero_jugador)
