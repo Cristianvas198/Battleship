@@ -14,7 +14,7 @@ def colocar_barco(barco, tablero):
         tablero[x, y] = "B"
     return tablero 
 
-def tablero_maquina_base(tablero): #este tablero oculta los barcos de la maquina, solo muestra los disparos del 
+def tablero_maquina_base(tablero): #este tablero oculta los barcos de la maquina, solo muestra los disparos del jugador
     print("Tablero máquina")
     for fila in tablero:
         filasvisibles = []
@@ -73,6 +73,6 @@ def crear_barco_direccion(eslora, tablero, direccion):
         if all(tablero[pos[0], pos[1]] == '_' for pos in barco): #verifica si no hay otro barco en esa posicion generada
             return barco 
         
-def ganar(tablero):
+def ganar(tablero): #Verifica si quedan o no mas "B" en los tableros.
     return not np.any(tablero == "B")
     
